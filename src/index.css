@@ -39,6 +39,26 @@ h6 {
   color: var(--color-neutral-000);
 }
 
-p {
+h1 {
+  @apply text-5xl;
+}
+
+p,
+button,
+input {
   color: var(--color-neutral-000);
+}
+
+button {
+  @apply cursor-pointer bg-primary-500 hover:bg-primary-700 font-semibold py-2 px-4 rounded-xl;
+}
+
+.current-bg {
+  background: url("./assets/images/bg-today-small.svg") no-repeat center/cover;
+}
+
+@media (min-width: 768px) {
+  .current-bg {
+    background: url("./assets/images/bg-today-large.svg") no-repeat center/cover;
+  }
 }

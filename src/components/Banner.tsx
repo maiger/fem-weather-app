@@ -1,7 +1,10 @@
+import logo from "../assets/images/logo.svg";
+
 function Banner() {
   return (
-    <div>
-      <p>Banner</p>
+    <div className="w-full flex justify-between items-center p-4">
+      <img src={logo} alt="Weather Now Logo" />
+      <p>Units</p>
     </div>
   );
   // <p>Units</p>

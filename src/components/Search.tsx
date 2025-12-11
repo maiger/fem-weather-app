@@ -1,7 +1,12 @@
 function Search() {
   return (
     <div>
-      <p>Searchbar</p>
+      <input
+        className="bg-neutral-600 mr-4 p-2 rounded-xl"
+        type="text"
+        placeholder="Search for a place..."
+      />
+      <button>Search</button>
     </div>
   );
 
