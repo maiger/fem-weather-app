@@ -25,7 +25,7 @@
 }
 
 body {
-  @apply bg-gray-100 text-lg font-dmsans;
+  @apply bg-neutral-900 text-lg font-dmsans;
 }
 
 h1,
@@ -36,4 +36,9 @@ h5,
 h6 {
   font-family: var(--font-bricolage);
   font-weight: 700;
+  color: var(--color-neutral-000);
+}
+
+p {
+  color: var(--color-neutral-000);
 }

@@ -1,49 +1,24 @@
+import Banner from "./components/Banner";
+import Current from "./components/Current";
+import Daily from "./components/Daily";
+import Hourly from "./components/Hourly";
+import Search from "./components/Search";
+
 function App() {
   return (
-    <div className="bg-blue-200">
-      <p>Units</p>
+    <div className="flex flex-col items-center gap-6">
+      <Banner />
+      <h1>How's the sky looking today?</h1>
+      <Search />
+      <div className="flex gap-6">
+        <div className="flex flex-col gap-6">
+          <Current />
+          <Daily />
+        </div>
+        <Hourly />
+      </div>
 
-      <p>Switch to Imperial/Metric</p>
-
-      <p>Temperature</p>
-
-      <p>Celsius (°C)</p>
-      <p>Fahrenheit (°F)</p>
-
-      <p>Wind Speed</p>
-
-      <p>km/h</p>
-      <p>mph</p>
-
-      <p>Precipitation</p>
-
-      <p>Millimeters (mm)</p>
-      <p>Inches (in)</p>
-
-      <p>How's the sky looking today?</p>
-
-      <p>Search for a city, e.g., New York</p>
-      <p>Search</p>
-
-      <p>Feels like</p>
-      {/* Insert temperature here  */}
-
-      <p>Humidity</p>
-      {/* Insert humidity here  */}
-
-      <p>Wind</p>
-      {/* Insert wind here     */}
-
-      <p>Precipitation</p>
-      {/* Insert precipitation here  */}
-
-      <p>Daily forecast</p>
-      {/* Insert daily forecast for the next 7 days here  */}
-
-      <p>Hourly forecast</p>
-      {/* Insert hourly forecast for the selected day here  */}
-
-      <div className="attribution">
+      <div className="text-sm text-neutral-200">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge">
           Frontend Mentor
