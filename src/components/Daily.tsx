@@ -1,64 +1,17 @@
+import DailyItem from "./DailyItem";
+
 function Daily() {
   return (
     <div>
       <p>Daily forecast</p>
       <div className="flex mt-4 gap-1">
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>{" "}
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>{" "}
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>{" "}
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>{" "}
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-between">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>
-        <div className="flex-1 flex flex-col gap-4 w-30 items-center bg-neutral-800 rounded-2xl p-4 mx-1">
-          <p>Tue</p>
-          <p>Icon</p>
-          <div className="flex justify-end">
-            <p>18&deg;</p>
-            <p>12&deg;</p>
-          </div>
-        </div>
+        <DailyItem day="Mon" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Tue" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Wed" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Thu" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Fri" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Sat" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Sun" icon="icon" highTemp={18} lowTemp={10} metric />
       </div>
     </div>
   );
