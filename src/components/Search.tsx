@@ -1,6 +1,6 @@
 function Search() {
   return (
-    <div>
+    <div className="mt-6 mb-3">
       <input
         className="bg-neutral-600 mr-4 p-2 rounded-xl"
         type="text"
