@@ -1,3 +1,5 @@
+import iSunny from "../assets/images/icon-sunny.webp";
+
 import HourlyItem from "./HourlyItem";
 
 function Hourly() {
@@ -8,15 +10,15 @@ function Hourly() {
         <p className="bg-neutral-600 px-4 py-2 rounded-xl">Tuesday</p>
       </div>
       <div className="flex flex-col gap-3">
-        <HourlyItem hour="1 AM" icon="Icon" temp={15} metric={true} />
-        <HourlyItem hour="2 AM" icon="Icon" temp={14} metric={true} />
-        <HourlyItem hour="3 AM" icon="Icon" temp={13} metric={true} />
-        <HourlyItem hour="4 AM" icon="Icon" temp={13} metric={true} />
-        <HourlyItem hour="5 AM" icon="Icon" temp={12} metric={true} />
-        <HourlyItem hour="6 AM" icon="Icon" temp={12} metric={true} />
-        <HourlyItem hour="7 AM" icon="Icon" temp={13} metric={true} />
-        <HourlyItem hour="8 AM" icon="Icon" temp={14} metric={true} />
-        <HourlyItem hour="9 AM" icon="Icon" temp={16} metric={true} />
+        <HourlyItem hour="1 AM" icon={iSunny} temp={15} metric={true} />
+        <HourlyItem hour="2 AM" icon={iSunny} temp={14} metric={true} />
+        <HourlyItem hour="3 AM" icon={iSunny} temp={13} metric={true} />
+        <HourlyItem hour="4 AM" icon={iSunny} temp={13} metric={true} />
+        <HourlyItem hour="5 AM" icon={iSunny} temp={12} metric={true} />
+        <HourlyItem hour="6 AM" icon={iSunny} temp={12} metric={true} />
+        <HourlyItem hour="7 AM" icon={iSunny} temp={13} metric={true} />
+        <HourlyItem hour="8 AM" icon={iSunny} temp={14} metric={true} />
+        <HourlyItem hour="9 AM" icon={iSunny} temp={16} metric={true} />
       </div>
     </div>
   );

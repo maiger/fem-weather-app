@@ -1,3 +1,5 @@
+import iSunny from "../assets/images/icon-sunny.webp";
+
 import DailyItem from "./DailyItem";
 
 function Daily() {
@@ -5,13 +7,13 @@ function Daily() {
     <div>
       <p>Daily forecast</p>
       <div className="flex mt-4 gap-1">
-        <DailyItem day="Mon" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Tue" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Wed" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Thu" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Fri" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Sat" icon="icon" highTemp={18} lowTemp={10} metric />
-        <DailyItem day="Sun" icon="icon" highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Mon" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Tue" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Wed" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Thu" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Fri" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Sat" icon={iSunny} highTemp={18} lowTemp={10} metric />
+        <DailyItem day="Sun" icon={iSunny} highTemp={18} lowTemp={10} metric />
       </div>
     </div>
   );
