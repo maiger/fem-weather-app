@@ -1,8 +1,8 @@
 function Search() {
   return (
-    <div className="mt-6 mb-3">
+    <div className="flex flex-col md:flex-row justify-center mt-6 mb-3 w-full">
       <input
-        className="bg-neutral-600 mr-4 p-2 rounded-xl"
+        className="bg-neutral-600 mb-2 md:mb-0 md:mr-4 p-2 rounded-xl"
         type="text"
         placeholder="Search for a place..."
       />

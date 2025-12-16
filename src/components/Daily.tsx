@@ -6,7 +6,7 @@ function Daily() {
   return (
     <div>
       <p>Daily forecast</p>
-      <div className="flex mt-4 gap-1">
+      <div className="flex flex-wrap justify-center mt-4 gap-1">
         <DailyItem day="Mon" icon={iSunny} highTemp={18} lowTemp={10} metric />
         <DailyItem day="Tue" icon={iSunny} highTemp={18} lowTemp={10} metric />
         <DailyItem day="Wed" icon={iSunny} highTemp={18} lowTemp={10} metric />

@@ -6,11 +6,11 @@ import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 m-4">
       <Banner />
-      <h1>How's the sky looking today?</h1>
+      <h1 className="text-center">How's the sky looking today?</h1>
       <Search />
-      <div className="flex gap-6">
+      <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
         <div className="flex flex-col gap-6">
           <Current />
           <Daily />

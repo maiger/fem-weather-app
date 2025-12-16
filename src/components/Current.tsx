@@ -3,7 +3,7 @@ import iconSunny from "../assets/images/icon-sunny.webp";
 function Current() {
   return (
     <div>
-      <div className="current-bg flex justify-between items-center p-6 rounded-2xl h-65">
+      <div className="current-bg flex flex-col md:flex-row justify-between items-center p-6 rounded-2xl h-65">
         <div>
           <p className="text-2xl font-bold">Current Location</p>
           <p>DateTime</p>
@@ -13,22 +13,22 @@ function Current() {
           <p className="text-8xl font-bold">20&deg;</p>
         </div>
       </div>
-      <div className="flex gap-4 mt-6">
-        <div className="bg-neutral-800 flex-1 p-4 rounded-2xl h-25">
+      <div className="flex flex-wrap gap-4 mt-6">
+        <div className="bg-neutral-800 flex-1 p-6 rounded-2xl min-w-40 h-30">
           <p>Feels like</p>
-          <p className="text-2xl">18c&deg;</p>
+          <p className="text-3xl mt-4">18c&deg;</p>
         </div>
-        <div className="bg-neutral-800 flex-1 p-4 rounded-2xl h-25">
+        <div className="bg-neutral-800 flex-1 p-6 rounded-2xl min-w-40 h-30">
           <p>Humidity</p>
-          <p className="text-2xl">46%</p>
+          <p className="text-3xl mt-4">46%</p>
         </div>
-        <div className="bg-neutral-800 flex-1 p-4 rounded-2xl h-25">
+        <div className="bg-neutral-800 flex-1 p-6 rounded-2xl min-w-40 h-30">
           <p>Wind</p>
-          <p className="text-2xl">14 km/h</p>
+          <p className="text-3xl mt-4">14 km/h</p>
         </div>
-        <div className="bg-neutral-800 flex-1 p-4 rounded-2xl h-25">
+        <div className="bg-neutral-800 flex-1 p-6 rounded-2xl min-w-40 h-30">
           <p>Precipitation</p>
-          <p className="text-2xl">0 mm</p>
+          <p className="text-3xl mt-4">0 mm</p>
         </div>
       </div>
     </div>
