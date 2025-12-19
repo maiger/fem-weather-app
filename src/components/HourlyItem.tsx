@@ -1,15 +1,17 @@
+import WeatherIcon from "./WeatherIcon";
+
 type HourlyItemProps = {
   hour: string;
-  icon: string;
+  code: number;
   temp: number;
   metric: boolean;
 };
 
-function HourlyItem({ hour, icon, temp }: HourlyItemProps) {
+function HourlyItem({ hour, code, temp }: HourlyItemProps) {
   return (
     <div className="flex justify-between items-center bg-neutral-700 p-3 rounded-xl">
       <div className="flex gap-4 items-center">
-        <img className="w-10" src={icon} alt="" />
+        <WeatherIcon code={code} size="small" />
         <p>{hour}</p>
       </div>
       <p>{temp}C</p>

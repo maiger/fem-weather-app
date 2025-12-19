@@ -1,4 +1,4 @@
-import iconSunny from "../assets/images/icon-sunny.webp";
+import WeatherIcon from "./WeatherIcon";
 
 function Current() {
   return (
@@ -9,7 +9,7 @@ function Current() {
           <p>DateTime</p>
         </div>
         <div className="flex items-center">
-          <img className="w-30 mr-8" src={iconSunny} alt="" />
+          <WeatherIcon code={0} size="large" />
           <p className="text-8xl font-bold">20&deg;</p>
         </div>
       </div>
